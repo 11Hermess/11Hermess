@@ -1,0 +1,143 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-image: 
+    linear-gradient(
+        to bottom right,
+        #ff503f,
+        #fafaf9
+    );
+}
+
+.navbar {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 200px auto;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
+    color: #1d1c1d;
+    transition: 0.25s ease;
+}
+
+.navbar .menu {
+    position: absolute;
+    top: -75px;
+    left: -75px;
+    border: 150px solid transparent;
+    border-radius: 50%;
+    cursor: default;
+    transform: scale(0);
+    transition: transform 1.4s ease;
+    z-index: -1;
+}
+
+
+.navbar:hover .menu {
+transition:
+transform 0.4s ease,
+z-index 0s ease
+;
+transform: scale(1);
+z-index: 1;
+}
+
+.navbar .menu li {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transform-origin: 100px 100px;
+    transition: all 0.5s ease;
+}
+
+
+.navbar .menu li a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #fafaf9;
+    color: #1d1c1d;
+    position: absolute;
+    font-size: 60%;
+    transition: 0.7s;    
+}
+
+
+.navbar:hover .menu li:nth-child(1) {
+    transform: rotate(100deg);
+}
+
+.navbar:hover .menu li:nth-child(1) a {
+    transform: rotate(620deg);
+}
+
+.navbar:hover .menu li:nth-child(2) {
+    transform: rotate(140deg);
+}
+
+.navbar:hover .menu li:nth-child(2) a {
+    transform: rotate(580deg);
+}
+
+.navbar:hover .menu li:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+.navbar:hover .menu li:nth-child(3) a {
+    transform: rotate(580deg);
+}
+
+
+.navbar:hover .menu li:nth-child(4) {
+transform: rotate(220deg);
+}
+
+.navbar:hover .menu li:nth-child(4) a {
+    transform: rotate(490deg);
+}
+
+.navbar:hover .menu li:nth-child(5) {
+    transform: rotate(260deg);
+}
+.navbar:hover .menu li:nth-child(5) a {
+    transform: rotate(460deg);
+}
+
+.navbar:hover .menu li:nth-child(6) {
+    transform: rotate(300deg);
+}
+.navbar:hover .menu li:nth-child(6) a {
+    transform: rotate(420deg);
+}
+.navbar:hover .menu li:nth-child(7) {
+    transform: rotate(340deg);
+}
+.navbar:hover .menu li:nth-child(7) a {
+    transform: rotate(380deg);
+}
+.navbar:hover .menu li:nth-child(8) {
+    transform: rotate(380deg);
+}
+.navbar:hover .menu li:nth-child(8) a {
+    transform: rotate(340deg);
+}
+.navbar:hover .menu li:nth-child(9) {
+    transform: rotate(420deg);
+}
+.navbar:hover .menu li:nth-child(9) a {
+    transform: rotate(380deg);
+}
